@@ -9,7 +9,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-end justify-center overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
-      <div className="relative z-10 text-center text-white px-4 animate-fade-in">
+      <div className="relative z-10 text-center text-white px-4 mb-16 md:mb-20 animate-fade-in">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 text-shadow">
           Olá, sou o Max.
         </h1>
