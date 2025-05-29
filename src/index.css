@@ -1,6 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
@@ -96,6 +99,19 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-portfolio-bg text-portfolio-text font-inter;
+    background-image: 
+      radial-gradient(circle at 1px 1px, rgba(67, 74, 84, 0.15) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+}
+
+@layer utilities {
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
